@@ -3,9 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "chroma-js": "^2.0.3",
+    "faker": "^4.1.0",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1",
+    "react-scrollspy": "^3.4.0",
+    "react-spring": "^8.0.20",
+    "react-transition-group": "^4.0.1",
+    "react-virtualized-auto-sizer": "^1.0.2",
+    "react-waypoint": "^9.0.2",
+    "react-window": "^1.8.1",
+    "styled-components": "^4.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
