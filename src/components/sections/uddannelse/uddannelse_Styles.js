@@ -17,7 +17,7 @@ const media = Object.keys(sizes).reduce((acc, label) => {
 }, {});
 
 // Biografi
-export const StyledBiografi = styled.div`
+export const StyledUddannelse = styled.div`
 	height: 100%;
 	width: 100%;
 	display: flex;

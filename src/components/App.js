@@ -7,19 +7,19 @@ import {
 	GlobalStyle
 } from './app_Styles';
 
-import Navbar from './Navbar';
+import TopNavbar from './TopNavbar';
 import Welcome from './welcome/Welcome';
 
 //sections
-import Biografi from './sections/biografi/Biografi';
+import Uddannelse from './sections/uddannelse/Uddannelse';
 import Features from './sections/features/Features';
 
 // Routes Config
 const sections = [
 	{
-		id: 'section-biografi',
-		name: 'Biografi',
-		component: <Biografi />
+		id: 'section-uddannelse',
+		name: 'Uddannelse',
+		component: <Uddannelse />
 	},
 	{
 		id: 'section-features',
@@ -35,19 +35,23 @@ const sections = [
 
 const App = () => {
 	return (
-		<StyledApp>
+		<React.Fragment>
 			<GlobalStyle />
-			<Navbar sections={sections} />
-			<Welcome />
-			{sections.map((section, index) => (
-				<StyledSection key={section.id} id={section.id}>
-					<StyledSectionHeader>{section.name}</StyledSectionHeader>
-					<StyledSectionContent>
-						{section.component}
-					</StyledSectionContent>
-				</StyledSection>
-			))}
-		</StyledApp>
+			<TopNavbar sections={sections} />
+			<StyledApp>
+				<Welcome />
+				{sections.map((section, index) => (
+					<StyledSection key={section.id} id={section.id}>
+						<StyledSectionHeader>
+							{section.name}
+						</StyledSectionHeader>
+						<StyledSectionContent>
+							{section.component}
+						</StyledSectionContent>
+					</StyledSection>
+				))}
+			</StyledApp>
+		</React.Fragment>
 	);
 };
 

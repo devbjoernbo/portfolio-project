@@ -102,5 +102,10 @@ const timelineData = [
 		name: 'React relateret teknologier',
 		date: 'April 2019',
 		text: 'UdeMy kursuser, youtube-videoer, artikler og forskellige docs.'
+	},
+	{
+		name: 'Deployment',
+		date: 'Maj 2019',
+		text: 'UdeMy kursus, artikler og forskellige docs.'
 	}
 ];

@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { Waypoint } from 'react-waypoint';
-import { StyledBiografi } from './biografi_Styles';
+import { StyledUddannelse } from './uddannelse_Styles';
 
 import Timeline from './timeline/Timeline';
 import Courses from './courses/Courses';
 
-const Biografi = () => {
+const Uddannelse = () => {
 	const [on, toggle] = useState(false);
 
 	return (
-		<StyledBiografi>
+		<StyledUddannelse>
 			<Waypoint
 				onEnter={() => {
 					if (!on) toggle(true);
@@ -18,8 +18,8 @@ const Biografi = () => {
 			/>
 			<Courses on={on} />
 			<Timeline on={on} />
-		</StyledBiografi>
+		</StyledUddannelse>
 	);
 };
 
-export default Biografi;
+export default Uddannelse;
