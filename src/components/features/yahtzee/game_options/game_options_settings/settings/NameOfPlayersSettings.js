@@ -33,14 +33,12 @@ const NameOfPlayersSettings = ({
 
 	return (
 		<React.Fragment>
-			<StyledOptionSectionHeader>
-				Name of players
-			</StyledOptionSectionHeader>
+			<StyledOptionSectionHeader>Spillernavne</StyledOptionSectionHeader>
 
 			<form onSubmit={handleOnPlayerNamesSubmit}>
 				{playerNameInputFields()}
 				<StyledStartGameButton type="submit">
-					Start Game
+					Start spil
 				</StyledStartGameButton>
 			</form>
 		</React.Fragment>

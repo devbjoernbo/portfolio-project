@@ -36,37 +36,37 @@ const ScoreTable = ({ doScore, currentPlayer }) => {
 				<StyledTable cellSpacing="0">
 					<tbody>
 						<RuleRow
-							name="Ones"
+							name="Ènere"
 							score={scores.ones}
 							description={ones.description}
 							doScore={evt => doScore('ones', ones.evalRoll)}
 						/>
 						<RuleRow
-							name="Twos"
+							name="Toere"
 							score={scores.twos}
 							description={twos.description}
 							doScore={evt => doScore('twos', twos.evalRoll)}
 						/>
 						<RuleRow
-							name="Threes"
+							name="Treere"
 							score={scores.threes}
 							description={threes.description}
 							doScore={evt => doScore('threes', threes.evalRoll)}
 						/>
 						<RuleRow
-							name="Fours"
+							name="Firere"
 							score={scores.fours}
 							description={fours.description}
 							doScore={evt => doScore('fours', fours.evalRoll)}
 						/>
 						<RuleRow
-							name="Fives"
+							name="Femmere"
 							score={scores.fives}
 							description={fives.description}
 							doScore={evt => doScore('fives', fives.evalRoll)}
 						/>
 						<RuleRow
-							name="Sixes"
+							name="Seksere"
 							score={scores.sixes}
 							description={sixes.description}
 							doScore={evt => doScore('sixes', sixes.evalRoll)}
@@ -76,7 +76,7 @@ const ScoreTable = ({ doScore, currentPlayer }) => {
 								score={upperBonus >= 63 ? true : false}
 								className="RuleRow-name"
 							>
-								{`Goal: 63 /  Current: ${upperBonus}`}
+								{`Mål: 63 /  Nuværende: ${upperBonus}`}
 							</StyledRuleRowItems>
 							<StyledRuleRowItems
 								score={upperBonus >= 63 ? true : false}
@@ -84,7 +84,7 @@ const ScoreTable = ({ doScore, currentPlayer }) => {
 							>
 								{upperBonus >= 63
 									? 50
-									: '50 points for acheiving the goal'}
+									: '50 point for at nå målet'}
 							</StyledRuleRowItems>
 						</StyledBonusRow>
 					</tbody>
@@ -95,7 +95,7 @@ const ScoreTable = ({ doScore, currentPlayer }) => {
 				<StyledTable cellSpacing="0">
 					<tbody>
 						<RuleRow
-							name="Three of Kind"
+							name="Tre af en slags"
 							score={scores.threeOfKind}
 							description={threeOfKind.description}
 							doScore={evt =>
@@ -103,7 +103,7 @@ const ScoreTable = ({ doScore, currentPlayer }) => {
 							}
 						/>
 						<RuleRow
-							name="Four of Kind"
+							name="Fire af en slags"
 							score={scores.fourOfKind}
 							description={fourOfKind.description}
 							doScore={evt =>
@@ -111,7 +111,7 @@ const ScoreTable = ({ doScore, currentPlayer }) => {
 							}
 						/>
 						<RuleRow
-							name="Full House"
+							name="Fuldt hus"
 							score={scores.fullHouse}
 							description={fullHouse.description}
 							doScore={evt =>
@@ -119,7 +119,7 @@ const ScoreTable = ({ doScore, currentPlayer }) => {
 							}
 						/>
 						<RuleRow
-							name="Small Straight"
+							name="Lille Straight"
 							score={scores.smallStraight}
 							description={smallStraight.description}
 							doScore={evt =>
@@ -127,7 +127,7 @@ const ScoreTable = ({ doScore, currentPlayer }) => {
 							}
 						/>
 						<RuleRow
-							name="Large Straight"
+							name="Stor Straight"
 							score={scores.largeStraight}
 							description={largeStraight.description}
 							doScore={evt =>
@@ -152,7 +152,7 @@ const ScoreTable = ({ doScore, currentPlayer }) => {
 				</StyledTable>
 			</StyledScoreTableSection>
 			{yahtzeeConfig.players.length > 1 ? (
-				<h3>CurrentPlayer is: {name}</h3>
+				<h3>Nuværende spiller: {name}</h3>
 			) : (
 				<h4>
 					{yahtzeeConfig.winner.id !== undefined ? (
@@ -164,7 +164,7 @@ const ScoreTable = ({ doScore, currentPlayer }) => {
 							> Reset game
 						</Button>
 					) : (
-						`TotalScore is: ${totalScore}`
+						`Samlet score: ${totalScore}`
 					)}
 				</h4>
 			)}

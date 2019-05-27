@@ -5,7 +5,7 @@ const GuessThisColor = ({ color }) => {
 
 	return (
 		<StyledGuessColor>
-			Guess this RGB-color:{' '}
+			Gæt denne RGB-farve:{' '}
 			<strong>
 				<i>({RgbOutput})</i>
 			</strong>

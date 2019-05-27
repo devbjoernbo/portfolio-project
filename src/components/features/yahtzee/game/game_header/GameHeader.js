@@ -35,10 +35,10 @@ const GameHeader = ({ handleClick, animateRoll }) => {
 };
 const DisplayRollInfo = ({ rollsLeft }) => {
 	const messages = [
-		'0 Rolls Left',
-		'1 Roll Left',
-		'2 Rolls Left',
-		'Starting Round'
+		'0 runder tilbage',
+		'1 runde tilbage',
+		'2 runder tilbage',
+		'Start runde'
 	];
 
 	return messages[rollsLeft];

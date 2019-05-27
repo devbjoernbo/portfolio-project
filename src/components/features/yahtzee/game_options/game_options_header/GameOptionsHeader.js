@@ -4,8 +4,8 @@ import { StyledGameOptionsHeader } from './gameOptionsHeader_Styles';
 const GameOptionsHeader = () => {
 	return (
 		<StyledGameOptionsHeader>
-			<h4>Velkommen til Yahtzee</h4>
-			<h5>Vælg indstillinger til spillet:</h5>
+			<h5>Velkommen til Yahtzee</h5>
+			<h6>Vælg indstillinger til spillet:</h6>
 		</StyledGameOptionsHeader>
 	);
 };

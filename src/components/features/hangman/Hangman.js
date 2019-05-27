@@ -19,28 +19,24 @@ import {
 } from './hangman_Styles';
 
 function randomWord() {
-	var ENGLISH_WORDS = [
-		'their',
-		'would',
-		'about',
-		'there',
-		'think',
-		'which',
-		'people',
-		'could',
-		'other',
-		'these',
-		'first',
-		'thing',
-		'those',
-		'woman',
-		'child',
-		'there',
-		'after'
+	var DANISH_WORDS = [
+		'object',
+		'array',
+		'symbol',
+		'string',
+		'testing',
+		'react',
+		'types',
+		'classes',
+		'functions',
+		'events',
+		'loops',
+		'promises',
+		'modules'
 	];
 	const randomNr = Math.round(Math.random() * 12);
 
-	return ENGLISH_WORDS[randomNr];
+	return DANISH_WORDS[randomNr];
 }
 const images = [img0, img1, img2, img3, img4, img5, img6];
 const maxWrong = 6;
@@ -101,17 +97,17 @@ const Hangman = () => {
 
 	const gameOver = nWrong >= maxWrong;
 	const isWinner = guessedWord().join('') === answer;
-	const altText = `${nWrong}/${maxWrong} guesses`;
+	const altText = `${nWrong}/${maxWrong} gæt`;
 	let gameState = generateButtons();
-	if (isWinner) gameState = 'You Win!';
-	if (gameOver) gameState = 'You Lose!';
+	if (isWinner) gameState = 'Du vandt!';
+	if (gameOver) gameState = 'Du tabte!';
 
 	return (
 		<StyledHangman>
 			<StyledHeader>Hangman</StyledHeader>
 			<StyledImg src={images[nWrong]} alt={altText} />
 			<StyledGuessesWrongParagraph>
-				Guessed Wrong: {nWrong}
+				Forkerte gæt: {nWrong}
 			</StyledGuessesWrongParagraph>
 			<StyledHangmanWordParagraph>
 				{!gameOver ? guessedWord() : answer}

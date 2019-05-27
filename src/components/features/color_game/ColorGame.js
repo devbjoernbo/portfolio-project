@@ -63,7 +63,7 @@ const ColorGame = () => {
 						/>
 					))
 				) : (
-					<StyledWonSignature>You WON!!!!</StyledWonSignature>
+					<StyledWonSignature>Korrekt!!!!</StyledWonSignature>
 				)}
 			</StyledSquareContainer>
 		</StyledColorContainer>

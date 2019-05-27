@@ -40,9 +40,9 @@ const LeaderBoard = ({ players }) => {
 			<StyledLeaderBoardTable>
 				<thead>
 					<tr>
-						<StyledTableHeader>Placement</StyledTableHeader>
-						<StyledTableHeader>Points</StyledTableHeader>
-						<StyledTableHeader>Name</StyledTableHeader>
+						<StyledTableHeader>Placering</StyledTableHeader>
+						<StyledTableHeader>Point</StyledTableHeader>
+						<StyledTableHeader>Navn</StyledTableHeader>
 					</tr>
 				</thead>
 				<tbody>

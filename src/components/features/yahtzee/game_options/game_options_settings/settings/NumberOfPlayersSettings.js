@@ -12,10 +12,10 @@ const NumberOfPlayersSettings = ({
 	return (
 		<React.Fragment>
 			<StyledOptionSectionHeader>
-				Number of players
+				Antal af spillere:
 			</StyledOptionSectionHeader>
 			<StyledLabel>
-				Select number of players:
+				Vælg antal af spillere:
 				<StyledSelect
 					value={playersConfig.numbPlayers}
 					onChange={handlePlayerNumberChange}

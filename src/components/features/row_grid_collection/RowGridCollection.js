@@ -119,12 +119,12 @@ const RowSizeSelection = ({
 	return (
 		<StyledRowSize>
 			<StyledButton onClick={handleOnPickedList}>
-				Toggle Grid eller Row visning
+				{isRow ? 'Skift til Grid-visning' : 'Skift til Række-visning'}
 			</StyledButton>
 			<StyledLabel>
 				{isRow
-					? 'Select number of rows:'
-					: 'Select number of rows & columns:'}
+					? 'Vælg antallet af rækker:'
+					: 'Vælg antallet af rækker og kolonner:'}
 				<StyledInput
 					value={rowCount}
 					onChange={event =>

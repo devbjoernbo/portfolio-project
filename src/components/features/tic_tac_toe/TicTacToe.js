@@ -71,7 +71,7 @@ const useTicTacToeGameSetup = () => {
 	};
 
 	const moves = history.map((step, move) => {
-		const description = move ? `Gå til #${move}` : 'Go to game start';
+		const description = move ? `Gå til #${move}` : 'Gå til start';
 		return (
 			<StyledMoves key={move}>
 				<StyledMovesButton onClick={() => jumpTo(move)}>
@@ -88,7 +88,7 @@ const useTicTacToeGameSetup = () => {
 
 			let status;
 			if (winner) {
-				status = 'Winner: ' + winner;
+				status = 'Vinder: ' + winner;
 
 				dispatchGameConfig({
 					type: 'CHECK_GAME-STATUS',
@@ -96,7 +96,7 @@ const useTicTacToeGameSetup = () => {
 				});
 				dispatchGameConfig({ type: 'ADD_WINNER', payload: winner });
 			} else {
-				status = 'Next player: ' + (isXNext ? 'X' : 'O');
+				status = 'Næste spiller: ' + (isXNext ? 'X' : 'O');
 				dispatchGameConfig({
 					type: 'CHECK_GAME-STATUS',
 					payload: status

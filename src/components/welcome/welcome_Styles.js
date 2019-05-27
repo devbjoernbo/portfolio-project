@@ -1,8 +1,7 @@
 import styled, { css } from 'styled-components';
-import { animated } from 'react-spring';
+
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Image from 'react-bootstrap/Image';
-import Button from 'react-bootstrap/Button';
 
 //MEDIA-QUERIES
 const sizes = {
@@ -37,16 +36,6 @@ export const StyledJumbotron = styled(Jumbotron)`
 
 	${media.tablet`height: auto; flex-direction: column;`}
 `;
-export const StyledLeftContainer = styled.div`
-	width: 50%;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
-
-	${media.tablet`width: 80%;`}
-`;
 
 export const StyledRightContainer = styled.div`
 	flex-direction: column;
@@ -62,32 +51,19 @@ export const StyledMobileNr = styled.p`
 `;
 export const StyledTitle = styled.h1`
 	margin-bottom: 15px;
+	width: 100%;
 `;
 export const StyledDecriptionContainer = styled.div`
+	width: 50%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
 	font-size: 15px;
-	${media.tablet`text-align: center;`}
+	${media.tablet`width: 80%; text-align: center;`}
 `;
 export const StyledDecription = styled.p``;
-
-export const StyledDetailsButton = styled(Button)`
-	width: 160px;
-	height: 35px;
-	font-size: 17px;
-	cursor: pointer;
-	color: white;
-	font-weight: 300;
-	background-size: 100% auto;
-	box-shadow: 0 10px 19px rgba(0, 0, 0, 0.3), 0 7px 6px rgba(0, 0, 0, 0.1);
-	background-image: linear-gradient(
-		to right,
-		#7d38b1 0%,
-		#59287d 51%,
-		#7d38b1 100%
-	);
-	border-radius: 0.5rem;
-	border: none;
-	${media.tablet`position: relative; left: calc(50% - 80px);`}
-`;
 
 export const StyledImage = styled(Image)`
 	position: relative;
@@ -97,8 +73,4 @@ export const StyledImage = styled(Image)`
 	box-shadow: 0 10px 19px rgba(0, 0, 0, 0.3), 0 7px 6px rgba(0, 0, 0, 0.1);
 
 	${media.tablet`height: 280px; margin-top: 60px;`}
-`;
-
-export const StyledSlide = styled(animated.div)`
-	overflow: hidden;
 `;

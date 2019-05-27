@@ -14,10 +14,18 @@ const Uddannelse = () => {
 				onEnter={() => {
 					if (!on) toggle(true);
 				}}
-				bottomOffset="20%"
+				bottomOffset="0%"
 			/>
 			<Courses on={on} />
+
 			<Timeline on={on} />
+
+			<Waypoint
+				onEnter={() => {
+					if (!on) toggle(true);
+				}}
+				bottomOffset="0%"
+			/>
 		</StyledUddannelse>
 	);
 };

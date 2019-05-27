@@ -29,12 +29,12 @@ export const StyledTimelineContainer = styled.div`
 		background-color: #e17b77;
 		content: '';
 		position: absolute;
-		left: calc(50% - 6px);
+		left: calc(50% - 2px);
 		width: 4px;
 		height: 100%;
 	}
 
-	${media.tablet` width: 50%; margin-top: 50px; `}
+	${media.tablet` width: 70%; margin-top: 50px; `}
 `;
 
 export const StyledItemContent = styled.div`
@@ -43,7 +43,7 @@ export const StyledItemContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	padding: 40px 15px 0px 15px;
+
 	position: relative;
 
 	max-width: 100%;
@@ -67,25 +67,37 @@ export const StyledItemContent = styled.div`
 	}
 `;
 
+export const StyledBottomContainer = styled.div`
+	display: flex;
+	flex-direction: row-reverse;
+
+	height: 100%;
+	padding: 10px;
+	text-align: center;
+	align-items: center;
+`;
 export const StyledItemCircle = styled.span`
 	background-color: #fff;
 	border: 3px solid #e17b77;
 	border-radius: 50%;
 	position: absolute;
 	top: calc(50% - 9px);
-	right: -42px;
+	right: -45px;
 	width: 20px;
 	height: 20px;
 	z-index: 100;
 `;
+
 export const StyledItemName = styled.span`
+	width: 100%;
+	position: relative;
+	text-align: center;
 	font-size: 10px;
 	font-weight: bold;
 	top: 5px;
-	left: 5px;
+	left: 0;
 	letter-spacing: 1px;
 	padding: 5px;
-	position: absolute;
 	text-transform: uppercase;
 	background: ${props => props.backgroundColor};
 	color: ${props => (props.isDark ? 'white' : 'black')};
@@ -101,6 +113,7 @@ export const StyledItemContainer = styled(animated.div)`
 	box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
 	transition: box-shadow 0.5s;
 	will-change: transform;
+
 	:hover  {
 		box-shadow: 0px 30px 100px -20px rgba(0, 0, 0, 0.8);
 	}
@@ -112,9 +125,8 @@ export const StyledItemContainer = styled(animated.div)`
 		padding-right: 0;
 	}
 
-	:nth-child(odd) ${StyledItemContent} {
-		text-align: left;
-		align-items: flex-start;
+	:nth-child(odd) ${StyledItemContent} ${StyledBottomContainer} {
+		flex-direction: row;
 	}
 
 	:nth-child(odd) ${StyledItemContent}:after {
@@ -123,27 +135,25 @@ export const StyledItemContainer = styled(animated.div)`
 		box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
 	}
 
-	:nth-child(odd) ${StyledItemContent} ${StyledItemName} {
-		left: auto;
-		right: 5px;
-	}
-
 	:nth-child(odd) ${StyledItemContent} ${StyledItemCircle} {
 		right: auto;
-		left: -48px;
+		left: -45px;
 	}
 `;
 
 export const StyledItemTime = styled.time`
+	position: relative;
+	padding: 0 5px;
+
 	color: #777;
-	font-size: 12px;
+	font-size: 15px;
 	font-weight: bold;
 `;
-export const StyledItemText = styled.p`
+export const StyledItemText = styled.div`
+	position: relative;
+	padding: 0 5px;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
-	margin: 10px 0 10px 0;
-	max-width: 250px;
 `;
 // Timeline -END

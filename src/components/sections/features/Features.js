@@ -83,11 +83,7 @@ const featuresProps = [
 		css: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
 		desc:
 			"Et spil fra 'The Modern React Bootcamp'. Koden var skrevet med React-Classes, som jeg har omskrevet til at bruge React-Hooks. CSS'en har jeg implementeret med Styled-Components. Derudover har jeg tilført em multiplayer-funktion, hvor der kan vælges flere spillere, samt indtastes navne, hvorefter der vises et leadeboard, hvor man kan se stillingen og de enkeltes spilleres score.",
-		componentPackages: [
-			'react-transition-group',
-			'styled-components',
-			'react-bootstrap'
-		]
+		componentPackages: ['react-transition-group', 'styled-components']
 	},
 	{
 		name: 'Kryds-og-Bolle',
@@ -113,7 +109,7 @@ const featuresProps = [
 		component: <RowGridCollection />,
 		css: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
 		desc:
-			'Lille feature, hvor jeg har implementeret med bl.a. react-window og faker.',
+			'Lille feature, som jeg har implementeret med react-window, react-virtualized-auto-sizer og faker.',
 		componentPackages: [
 			'react-window',
 			'styled-components',

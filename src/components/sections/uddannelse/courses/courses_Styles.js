@@ -106,6 +106,7 @@ export const StyledProgressBar = styled.div`
 	position: absolute;
 	bottom: 15px;
 	left: calc(50% - 100px);
+	font-size: 12px;
 
 	height: 15px;
 	width: 200px;

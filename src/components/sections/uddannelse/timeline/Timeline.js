@@ -8,15 +8,13 @@ import {
 	StyledItemContent,
 	StyledItemContainer,
 	StyledItemTime,
-	StyledItemText
+	StyledItemText,
+	StyledBottomContainer
 } from './timeline_Styles';
 
 function randomColor() {
-	//pick a "red" from 0 - 255
 	let r = Math.floor(Math.random() * 256);
-	//pick a "green" from  0 -255
 	let g = Math.floor(Math.random() * 256);
-	//pick a "blue" from  0 -255
 	let b = Math.floor(Math.random() * 256);
 	return { output: 'rgb(' + r + ', ' + g + ', ' + b + ')', rgb: [r, g, b] };
 }
@@ -49,8 +47,10 @@ const Timeline = ({ on }) => {
 							>
 								{name}
 							</StyledItemName>
-							<StyledItemTime>{date}</StyledItemTime>
-							<StyledItemText>{text}</StyledItemText>
+							<StyledBottomContainer>
+								<StyledItemTime>{date}</StyledItemTime>
+								<StyledItemText>{text}</StyledItemText>
+							</StyledBottomContainer>
 							<StyledItemCircle />
 						</StyledItemContent>
 					</StyledItemContainer>
@@ -65,47 +65,42 @@ export default Timeline;
 const timelineData = [
 	{
 		name: 'Java',
-		date: 'September 2017',
-		text: 'Første semester CBS. En masse youtube videoer.'
+		date: 'Sep 2017',
+		text: 'CBS-undervisnings- materiale, Youtube og artikler.'
 	},
 	{
 		name: 'GWT, JDBC og MYSQL',
-		date: 'Februar 2018',
-		text: 'Andet semester CBS. UdeMy kursuser, youtube-videoer og artikler.'
+		date: 'Feb 2018',
+		text: 'Udemy kurser, Youtube og artikler.'
 	},
 	{
 		name: 'HTML, CSS og JavaScript',
 		date: 'Juli 2018',
-		text: 'UdeMy kursuser, youtube-videoer og artikler.'
+		text: 'Udemy kurser, Youtube og artikler.'
 	},
 	{
 		name: 'MongoDB, Express og Node',
-		date: 'August 2018',
-		text: 'UdeMy kursuser, youtube-videoer og artikler.'
+		date: 'Aug 2018',
+		text: 'Kurser, Youtube og artikler.'
 	},
 	{
 		name: 'React',
-		date: 'Oktober 2018',
-		text: 'UdeMy kursuser, youtube-videoer, artikler og React-docs.'
+		date: 'Okt 2018',
+		text: 'Udemy kurser, Youtube, artikler og React-docs.'
 	},
 	{
 		name: 'MERN-stack',
-		date: 'Januar 2019',
-		text: 'UdeMy kursuser, youtube-videoer og artikler.'
+		date: 'Jan 2019',
+		text: 'Udemy kurser, Youtube og artikler.'
 	},
 	{
-		name: 'Hooks',
-		date: 'Februar 2019',
-		text: 'UdeMy kursuser, youtube-videoer, artikler og React-docs.'
-	},
-	{
-		name: 'React relateret teknologier',
-		date: 'April 2019',
-		text: 'UdeMy kursuser, youtube-videoer, artikler og forskellige docs.'
+		name: 'React baseret libraries',
+		date: 'Apr 2019',
+		text: 'Kurser, Youtube, artikler og forskellige docs.'
 	},
 	{
 		name: 'Deployment',
 		date: 'Maj 2019',
-		text: 'UdeMy kursus, artikler og forskellige docs.'
+		text: 'Udemy kursus, artikler og forskellige docs.'
 	}
 ];

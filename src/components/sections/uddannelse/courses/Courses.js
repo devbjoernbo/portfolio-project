@@ -147,7 +147,7 @@ const coursesItems = [
 		author: 'Colt Steele',
 		hours: 36.5,
 		completed: 18,
-		mainSubjects: ['Hooks', 'React Router', 'Animations', 'Drag & Drop'],
+		mainSubjects: ['Hooks', 'React Router', 'Animations'],
 		url: 'https://www.udemy.com/modern-react-bootcamp/learn/v4/overview'
 	},
 	{
@@ -171,7 +171,7 @@ const coursesItems = [
 		author: 'John Purcell',
 		hours: 18.5,
 		completed: 62,
-		mainSubjects: ['create, query and update databases'],
+		mainSubjects: ['Create, query and update databases'],
 		url:
 			'https://www.udemy.com/mysql-and-sql-from-beginner-to-advanced/learn/v4/overview'
 	},
@@ -210,17 +210,17 @@ const coursesItems = [
 		author: 'Stephen Grider',
 		hours: 13.5,
 		completed: 99,
-		mainSubjects: ['Mocha', 'Robomongo'],
-		url: 'https://www.udemy.com/react-redux-tutorial/learn/v4/overview'
+		mainSubjects: ['Mongoose', 'Mocha', 'Robomongo'],
+		url:
+			'https://www.udemy.com/the-complete-developers-guide-to-mongodb/learn/v4/overview'
 	},
 	{
 		title: 'Advanced React and Redux: 2018 Edition',
 		author: 'Stephen Grider',
 		hours: 21,
 		completed: 62,
-		mainSubjects: ['Testing: Jest & Enzyme'],
-		url:
-			'https://www.udemy.com/the-complete-developers-guide-to-mongodb/learn/v4/overview'
+		mainSubjects: ['Testing: Jest & Enzyme', 'Authentication'],
+		url: 'https://www.udemy.com/react-redux-tutorial/learn/v4/overview'
 	},
 	{
 		title: 'Learn HTML5 Programming From Scratch',
@@ -245,7 +245,7 @@ const coursesItems = [
 		author: 'Jonas Schmedtmann',
 		hours: 28,
 		completed: 40,
-		mainSubjects: ['Forskellige CSS features'],
+		mainSubjects: ['Grid', 'Flexbox'],
 		url: 'https://www.udemy.com/advanced-css-and-sass/learn/v4/overview'
 	},
 	{
@@ -275,14 +275,6 @@ const coursesItems = [
 		completed: 0,
 		mainSubjects: ['MERN-stack', 'Server-config'],
 		url: 'https://www.udemy.com/mern-stack-front-to-back/learn/v4/overview'
-	},
-	{
-		title: 'DESIGN RULES: Principles + Practices for Great UI Design',
-		author: 'Joe Natoli',
-		hours: 5,
-		completed: 0,
-		mainSubjects: ['UX'],
-		url: 'https://www.udemy.com/design-rules/learn/v4/overview'
 	},
 	{
 		title: 'Machine Learning with Javascript',
@@ -324,7 +316,7 @@ const coursesItems = [
 		author: 'Stephen Grider',
 		hours: 13.5,
 		completed: 0,
-		mainSubjects: ['GraphQL', 'React'],
+		mainSubjects: ['GraphQL'],
 		url: 'https://www.udemy.com/graphql-with-react-course/learn/v4/overview'
 	}
 ];

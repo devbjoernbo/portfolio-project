@@ -102,47 +102,50 @@ class Yahtzee extends Rule {
 }
 
 // ones, twos, etc score as sum of that value
-const ones = new TotalOneNumber({ val: 1, description: '1 point per 1' });
-const twos = new TotalOneNumber({ val: 2, description: '2 points per 2' });
-const threes = new TotalOneNumber({ val: 3, description: '3 points per 3' });
-const fours = new TotalOneNumber({ val: 4, description: '4 points per 4' });
-const fives = new TotalOneNumber({ val: 5, description: '5 points per 5' });
-const sixes = new TotalOneNumber({ val: 6, description: '6 points per 6' });
+const ones = new TotalOneNumber({ val: 1, description: '1 point pr. 1' });
+const twos = new TotalOneNumber({ val: 2, description: '2 point pr. 2' });
+const threes = new TotalOneNumber({ val: 3, description: '3 point pr. 3' });
+const fours = new TotalOneNumber({ val: 4, description: '4 point pr. 4' });
+const fives = new TotalOneNumber({ val: 5, description: '5 point pr. 5' });
+const sixes = new TotalOneNumber({ val: 6, description: '6 point pr. 6' });
 
 // three/four of kind score as sum of all dice
 const threeOfKind = new SumDistro({
 	count: 3,
-	description: 'Sum 3 dice'
+	description: 'Sum 3 terninger'
 });
 const fourOfKind = new SumDistro({
 	count: 4,
-	description: 'Sum 4 dice'
+	description: 'Sum 4 terninger'
 });
 
 // full house scores as flat 25
 const fullHouse = new FullHouse({
 	score: 25,
-	description: '25 points '
+	description: '25 point '
 });
 
 // small/large straights score as 30/40
 const smallStraight = new SmallStraight({
 	score: 30,
-	description: '30 points '
+	description: '30 point '
 });
 const largeStraight = new LargeStraight({
 	score: 40,
-	description: '40 points'
+	description: '40 point'
 });
 
 // yahtzee scores as 50
 const yahtzee = new Yahtzee({
 	score: 50,
-	description: '50 points'
+	description: '50 point'
 });
 
 // for chance, can view as some of all dice, requiring at least 0 of a kind
-const chance = new SumDistro({ count: 0, description: 'Sum of all dice' });
+const chance = new SumDistro({
+	count: 0,
+	description: 'Sum af alle terninger'
+});
 
 export {
 	ones,
