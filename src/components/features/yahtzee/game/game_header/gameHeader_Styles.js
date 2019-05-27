@@ -28,7 +28,7 @@ export const StyledGameTitle = styled.h1`
 	width: 50%;
 `;
 export const StyledDiceContainer = styled.section`
-	width: 80%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 0;

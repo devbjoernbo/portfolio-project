@@ -66,7 +66,7 @@ const timelineData = [
 	{
 		name: 'Java',
 		date: 'Sep 2017',
-		text: 'CBS-undervisnings- materiale, Youtube og artikler.'
+		text: 'Udleveret materiale fra CBS, Youtube og artikler.'
 	},
 	{
 		name: 'GWT, JDBC og MYSQL',

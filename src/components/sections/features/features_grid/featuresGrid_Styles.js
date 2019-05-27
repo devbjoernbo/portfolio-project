@@ -122,7 +122,7 @@ export const StyledButton = styled(animated.button)`
 `;
 export const StyledCurrentFeatureDescription = styled(animated(Card))`
 	position: absolute;
-	height: 90%;
+
 	width: 30%;
 	display: none;
 
@@ -132,11 +132,11 @@ export const StyledCurrentFeatureDescription = styled(animated(Card))`
 
 	z-index: 20;
 
-	${media.tablet`top: 0; height: 45%; width: 80%; left: 10%;`}
+	${media.tablet`top: 0; width: 85%; left: 7.5%; font-size: 14px;`}
+	${media.phone`font-size: 14px;`}
 `;
 export const StyledCurrentFeatureContainer = styled(animated(Card.Body))`
 	width: 100%;
-	height: 100%;
 
 	display: flex;
 	flex-direction: column;

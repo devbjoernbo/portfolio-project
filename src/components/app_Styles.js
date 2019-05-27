@@ -18,10 +18,10 @@ export const StyledSection = styled.section`
 	margin-top: 60px;
 `;
 export const StyledSectionHeader = styled.h1`
-	width: 140px;
+	width: 100%;
 	height: 50px;
 	position: relative;
-	left: calc(50% - 70px);
+	text-align: center;
 	margin-bottom: 40px;
 
 	font-size: 40px;

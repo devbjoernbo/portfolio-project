@@ -32,7 +32,7 @@ export const StyledCourses = styled(animated.div)`
 	flex-direction: column;
 	justify-content: space-around;
 
-	${media.tablet` width: 75%; left: 0;`}
+	${media.tablet` width: 75%; left: 0; top: -20px;`}
 `;
 export const StyledCourseOverview = styled(Card)`
 	position: relative;
@@ -46,6 +46,7 @@ export const StyledCourseOverview = styled(Card)`
 	border-radius: 0.3em;
 
 	${media.tablet` height: 300px;`}
+	${media.phone` width: 95%; left: calc(50% - 47.5%);`}
 `;
 export const StyledOverviewTitle = styled(Card.Header)`
 	font-weight: 500;

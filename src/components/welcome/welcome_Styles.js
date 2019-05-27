@@ -40,6 +40,8 @@ export const StyledJumbotron = styled(Jumbotron)`
 export const StyledRightContainer = styled.div`
 	flex-direction: column;
 	justify-content: center;
+
+	${media.tablet`text-align: center;`}
 `;
 export const StyledContactInfo = styled.div``;
 export const StyledEmail = styled.p`

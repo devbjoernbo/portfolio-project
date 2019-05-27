@@ -1,4 +1,18 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+const sizes = {
+	tablet: 1110,
+	phone: 500
+};
+
+const media = Object.keys(sizes).reduce((acc, label) => {
+	acc[label] = (...args) => css`
+		@media (max-width: ${sizes[label] / 16}em) {
+			${css(...args)}
+		}
+	`;
+
+	return acc;
+}, {});
 
 export const StyledListImageCollection = styled.div`
 	position: relative;
@@ -11,12 +25,16 @@ export const StyledListImageCollection = styled.div`
 	align-items: center;
 
 	justify-items: center;
+
+	${media.phone`width: 360px; `}
 `;
 export const StyledList = styled.div`
 	width: 400px;
 	height: 350px;
 	border: solid 1px #6c49b8;
 	padding: 15px;
+
+	${media.phone`width: 280px; `}
 `;
 export const StyledListItem = styled.div`
 	position: relative;

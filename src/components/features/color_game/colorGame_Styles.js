@@ -1,4 +1,18 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+const sizes = {
+	tablet: 1110,
+	phone: 500
+};
+
+const media = Object.keys(sizes).reduce((acc, label) => {
+	acc[label] = (...args) => css`
+		@media (max-width: ${sizes[label] / 16}em) {
+			${css(...args)}
+		}
+	`;
+
+	return acc;
+}, {});
 
 export const StyledColorContainer = styled.div`
 	position: relative;
@@ -16,6 +30,8 @@ export const StyledColorContainer = styled.div`
 
 	align-content: center;
 	justify-content: center;
+
+	${media.phone`width: 360px; left: calc(50% - 180px);`}
 `;
 
 export const StyledGameControlContainer = styled.div`
@@ -54,6 +70,8 @@ export const StyledButton = styled.button`
 	:focus {
 		outline: 0;
 	}
+
+	${media.phone`width: 80px; font-size: 13px;`}
 `;
 
 export const StyledSquareContainer = styled.div`

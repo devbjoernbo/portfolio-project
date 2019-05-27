@@ -22,10 +22,10 @@ const FeaturesGrid = ({ features, toggle, on }) => {
 	const springRef = useRef();
 	const scaleDownSpring = useSpring({
 		ref: springRef,
-		from: { width: '40%', height: '30%' },
+		from: { width: '0%', height: '0%' },
 		to: {
-			width: on ? '100%' : '40%',
-			height: on ? '100%' : '20%'
+			width: on ? '100%' : '0%',
+			height: on ? '100%' : '0%'
 		},
 		config: config.gentle
 	});

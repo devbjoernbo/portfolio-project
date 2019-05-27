@@ -1,5 +1,18 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+const sizes = {
+	tablet: 1110,
+	phone: 500
+};
 
+const media = Object.keys(sizes).reduce((acc, label) => {
+	acc[label] = (...args) => css`
+		@media (max-width: ${sizes[label] / 16}em) {
+			${css(...args)}
+		}
+	`;
+
+	return acc;
+}, {});
 export const StyledGame = styled.div`
 	width: 450px;
 	position: absolute;
@@ -10,15 +23,20 @@ export const StyledGame = styled.div`
 	justify-content: space-around;
 
 	text-align: center;
+	${media.phone`width: 360px;`}
 `;
 
 export const StyledGameBoardContainer = styled.div`
 	display: flex;
 	flex-direction: column;
+
+	${media.phone`padding-left: 10px;`}
 `;
 export const StyledGameInfo = styled.div`
 	width: 175px;
 	margin-left: 20px;
+
+	${media.phone`width: 200px;`}
 `;
 export const StyledGameOptions = styled.div`
 	margin-left: 20px;
@@ -27,10 +45,14 @@ export const StyledGameOptions = styled.div`
 export const StyledStatus = styled.div`
 	font-size: 25px;
 	margin-bottom: 10px;
+
+	${media.phone`font-size: 23px;`}
 `;
 
 export const StyledOrderedList = styled.ol`
 	font-size: 20px;
 	font-weight: 600;
 	padding-left: 30px;
+
+	${media.phone`padding-left: 30px;`}
 `;

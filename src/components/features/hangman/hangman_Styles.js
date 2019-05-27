@@ -1,4 +1,18 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+const sizes = {
+	tablet: 1110,
+	phone: 500
+};
+
+const media = Object.keys(sizes).reduce((acc, label) => {
+	acc[label] = (...args) => css`
+		@media (max-width: ${sizes[label] / 16}em) {
+			${css(...args)}
+		}
+	`;
+
+	return acc;
+}, {});
 
 export const StyledHangman = styled.div`
 	position: relative;
@@ -6,6 +20,8 @@ export const StyledHangman = styled.div`
 	color: black;
 	text-align: center;
 	zoom: 1.2;
+
+	${media.phone`width: 360px; zoom: 1.0; `}
 `;
 
 export const StyledLetterButton = styled.button`

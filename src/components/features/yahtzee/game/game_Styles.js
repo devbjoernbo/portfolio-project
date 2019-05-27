@@ -1,5 +1,18 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+const sizes = {
+	tablet: 1110,
+	phone: 500
+};
 
+const media = Object.keys(sizes).reduce((acc, label) => {
+	acc[label] = (...args) => css`
+		@media (max-width: ${sizes[label] / 16}em) {
+			${css(...args)}
+		}
+	`;
+
+	return acc;
+}, {});
 export const StyledGame = styled.div`
 	position: relative;
 	width: 400px;
@@ -10,6 +23,8 @@ export const StyledGame = styled.div`
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+
+	${media.phone`width: 360px;`}
 `;
 export const StyledScoreBoardController = styled.div`
 	position: relative;
@@ -21,6 +36,8 @@ export const StyledScoreBoardController = styled.div`
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+
+	${media.phone`width: 360px;`}
 `;
 export const StyledWinner = styled.div`
 	color: green;
