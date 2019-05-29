@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components';
 const sizes = {
 	tablet: 1110,
-	phone: 500
+	phone: 500,
+	smallPhone: 330
 };
 
 const media = Object.keys(sizes).reduce((acc, label) => {
@@ -20,4 +21,5 @@ export const StyledGuessColor = styled.div`
 	line-height: 30px;
 
 	${media.phone`font-size: 15px;`}
+	${media.smallPhone`font-size: 13px;`}
 `;

@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components';
 const sizes = {
 	tablet: 1110,
-	phone: 500
+	phone: 500,
+	smallPhone: 330
 };
 
 const media = Object.keys(sizes).reduce((acc, label) => {
@@ -19,9 +20,9 @@ export const StyledHangman = styled.div`
 	width: 400px;
 	color: black;
 	text-align: center;
-	zoom: 1.1;
 
-	${media.phone`width: 360px; zoom: 1.0; `}
+	${media.phone`width: 320px;  `}
+	${media.smallPhone`width: 280px;  `}
 `;
 
 export const StyledLetterButton = styled.button`
@@ -67,7 +68,7 @@ export const StyledHangmanWordParagraph = styled.p`
 	margin: 0 -1em 0.2em 0;
 	font-size: 2rem;
 
-	${media.phone`font-size: 1.7rem; margin: 0 -0.5em 0.1em 0; `}
+	${media.phone`font-size: 1.3rem; margin: 0 -0.5em 0.1em 0; `}
 `;
 export const StyledHangmanButtons = styled.p`
 	text-align: center;

@@ -34,9 +34,7 @@ const FeaturesRoutes = ({ on }) => {
 					exact
 					render={routeProps => (
 						<StyledFeatureReplacement>
-							Prøv en feature:
-							<br />
-							Klik på den pågældende overskrift
+							Prøv en feature
 						</StyledFeatureReplacement>
 					)}
 				/>
@@ -82,11 +80,11 @@ const featuresProps = [
 		component: <Yahtzee />,
 		css: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
 		desc:
-			"Et spil fra 'The Modern React Bootcamp'. Koden var skrevet med React-Classes, som jeg har omskrevet til at bruge React-Hooks. CSS'en har jeg implementeret med Styled-Components. Derudover har jeg tilført em multiplayer-funktion, hvor der kan vælges flere spillere, samt indtastes navne, hvorefter der vises et leadeboard, hvor man kan se stillingen og de enkeltes spilleres score.",
+			"Et spil fra 'The Modern React Bootcamp'. Koden var skrevet med React-Classes, som jeg har omskrevet til at bruge React-Hooks istedet. CSS'en har jeg implementeret med styled-components. Derudover har jeg tilført en multiplayer-funktion, hvor der kan vælges flere spillere, samt indtastes navne, hvorefter der vises et leadeboard, hvor man kan se stillingen og de enkeltes spilleres score.",
 		componentPackages: ['react-transition-group', 'styled-components']
 	},
 	{
-		name: 'Kryds-og-Bolle',
+		name: 'Tic-Tac-Toe',
 		id: 'kryds-og-bolle',
 		component: <TicTacToe />,
 		css: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
@@ -124,7 +122,7 @@ const featuresProps = [
 		component: <LightsOut />,
 		css: 'linear-gradient(135deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%)',
 		desc:
-			"Et spil fra 'The Modern React Bootcamp'. Koden var skrevet med React-Classes, som jeg har omskrevet til at bruge React-Hooks. CSS'en har jeg implementeret med Styled-Components.",
+			"Et spil fra 'The Modern React Bootcamp'. Koden var skrevet med React-Classes, som jeg har omskrevet til at bruge React-Hooks istedet. CSS'en har jeg implementeret med Styled-Components.",
 		componentPackages: ['styled-components']
 	},
 	{
@@ -133,7 +131,7 @@ const featuresProps = [
 		component: <Hangman />,
 		css: 'linear-gradient(135deg, #96fbc4 0%, #f9f586 100%)',
 		desc:
-			"Et spil fra 'The Modern React Bootcamp'. Koden var skrevet med React-Classes, som jeg har omskrevet til at bruge React-Hooks. CSS'en har jeg implementeret med Styled-Components.",
+			"Et spil fra 'The Modern React Bootcamp'. Koden var skrevet med React-Classes, som jeg har omskrevet til at bruge React-Hooks istedet. CSS'en har jeg implementeret med Styled-Components.",
 		componentPackages: ['styled-components']
 	}
 ];

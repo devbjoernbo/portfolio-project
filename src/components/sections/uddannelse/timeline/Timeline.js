@@ -81,7 +81,7 @@ const timelineData = [
 	{
 		name: 'MongoDB, Express og Node',
 		date: 'Aug 2018',
-		text: 'Udemy kurser, Youtube og artikler.'
+		text: 'Kurser, Youtube og artikler.'
 	},
 	{
 		name: 'React',

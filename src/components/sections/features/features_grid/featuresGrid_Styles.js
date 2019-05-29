@@ -8,7 +8,8 @@ import ListGroupItem from 'react-bootstrap/ListGroupItem';
 //MEDIA-QUERIES
 const sizes = {
 	tablet: 1110,
-	phone: 500
+	phone: 500,
+	smallPhone: 330
 };
 
 const media = Object.keys(sizes).reduce((acc, label) => {
@@ -77,6 +78,7 @@ export const StyledFeatureName = styled.div`
 	line-height: 20px;
 
 	text-transform: uppercase;
+	${media.smallPhone`font-size: 12px;`}$
 `;
 
 export const StyledLinks = styled(Link)`
@@ -130,7 +132,6 @@ export const StyledCurrentFeatureDescription = styled(animated(Card))`
 	z-index: 20;
 
 	${media.tablet`top: 0; width: 85%; left: 7.5%; font-size: 14px;`}
-	${media.phone`top: 50px; font-size: 14px;`}
 `;
 export const StyledCurrentFeatureContainer = styled(animated(Card.Body))`
 	position: relative;

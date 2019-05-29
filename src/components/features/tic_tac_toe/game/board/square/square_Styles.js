@@ -1,4 +1,19 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+const sizes = {
+	tablet: 1110,
+	phone: 500,
+	smallPhone: 330
+};
+
+const media = Object.keys(sizes).reduce((acc, label) => {
+	acc[label] = (...args) => css`
+		@media (max-width: ${sizes[label] / 16}em) {
+			${css(...args)}
+		}
+	`;
+
+	return acc;
+}, {});
 
 export const StyledSquare = styled.button`
 	background: #fff;
@@ -17,4 +32,6 @@ export const StyledSquare = styled.button`
 	:focus {
 		outline: none;
 	}
+
+	${media.smallPhone`height: 35px; width: 35px; line-height: 25px;`}
 `;

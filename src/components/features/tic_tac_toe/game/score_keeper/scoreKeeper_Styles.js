@@ -1,4 +1,19 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+const sizes = {
+	tablet: 1110,
+	phone: 500,
+	smallPhone: 330
+};
+
+const media = Object.keys(sizes).reduce((acc, label) => {
+	acc[label] = (...args) => css`
+		@media (max-width: ${sizes[label] / 16}em) {
+			${css(...args)}
+		}
+	`;
+
+	return acc;
+}, {});
 
 export const StyledScoreKeeper = styled.div`
 	position: relative;
@@ -17,6 +32,8 @@ export const StyledControlButtons = styled.div`
 export const StyledControlButton = styled.button`
 	margin: 10px 0;
 	font-size: 15px;
+	cursor: pointer;
+	${media.smallPhone`font-size: 12px;`}
 `;
 
 export const StyledScoreBox = styled.div`

@@ -2,7 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 // App - Component
 export const StyledApp = styled.div`
-	max-width: 100%;
+	width: 100%;
 	height: 100%;
 
 	display: flex;

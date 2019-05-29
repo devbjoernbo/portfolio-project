@@ -129,26 +129,28 @@ const RowSizeSelection = ({
 				{isRow ? 'Skift til Grid-visning' : 'Skift til Række-visning'}
 			</StyledButton>
 			<StyledLabel>
-				{isRow
-					? 'Vælg antal rækker:'
-					: 'Vælg antal rækker og kolonner:'}
+				Vælg antal rækker:
 				<StyledInput
 					value={rowCount}
 					onChange={event =>
 						handleOnValueNumberChange('rowCount', event)
 					}
 				/>
-				{isRow ? (
-					''
-				) : (
+			</StyledLabel>
+
+			{isRow ? (
+				''
+			) : (
+				<StyledLabel>
+					Vælg antal kolonner:
 					<StyledInput
 						value={columnCount}
 						onChange={event =>
 							handleOnValueNumberChange('columnCount', event)
 						}
 					/>
-				)}
-			</StyledLabel>
+				</StyledLabel>
+			)}
 		</StyledRowSize>
 	);
 };

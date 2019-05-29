@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components';
 const sizes = {
 	tablet: 1110,
-	phone: 500
+	phone: 500,
+	smallPhone: 330
 };
 
 const media = Object.keys(sizes).reduce((acc, label) => {
@@ -24,6 +25,7 @@ export const StyledGame = styled.div`
 
 	text-align: center;
 	${media.phone`width: 360px;`}
+	${media.smallPhone`width: 300px;`}
 `;
 
 export const StyledGameBoardContainer = styled.div`
@@ -37,6 +39,7 @@ export const StyledGameInfo = styled.div`
 	margin-left: 20px;
 
 	${media.phone`width: 200px;`}
+	${media.smallPhone`width: 150px;`}
 `;
 export const StyledGameOptions = styled.div`
 	margin-left: 20px;
@@ -47,6 +50,7 @@ export const StyledStatus = styled.div`
 	margin-bottom: 10px;
 
 	${media.phone`font-size: 23px;`}
+	${media.smallPhone`font-size: 16px;`}
 `;
 
 export const StyledOrderedList = styled.ol`
@@ -55,4 +59,5 @@ export const StyledOrderedList = styled.ol`
 	padding-left: 30px;
 
 	${media.phone`padding-left: 30px;`}
+	${media.smallPhone`padding-left: 10px; font-size: 16px;`}
 `;

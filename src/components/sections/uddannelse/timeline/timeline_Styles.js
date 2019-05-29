@@ -4,7 +4,8 @@ import { animated } from 'react-spring';
 //MEDIA-QUERIES
 const sizes = {
 	tablet: 1024,
-	phone: 500
+	phone: 500,
+	smallPhone: 330
 };
 
 const media = Object.keys(sizes).reduce((acc, label) => {
@@ -34,7 +35,7 @@ export const StyledTimelineContainer = styled.div`
 		height: 100%;
 	}
 
-	${media.tablet` width: 80%; margin-top: 50px; `}
+	${media.tablet` width: 70%; margin-top: 50px; `}
 `;
 
 export const StyledItemContent = styled.div`
@@ -147,6 +148,8 @@ export const StyledItemTime = styled.time`
 	color: #777;
 	font-size: 15px;
 	font-weight: bold;
+	${media.phone` font-size: 14px; `}
+	${media.smallPhone` font-size: 11px; `}
 `;
 export const StyledItemText = styled.div`
 	position: relative;
@@ -154,5 +157,7 @@ export const StyledItemText = styled.div`
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
+	${media.phone` font-size: 13px; `}
+	${media.smallPhone` font-size: 11px; padding: 0 2px; `}
 `;
 // Timeline -END

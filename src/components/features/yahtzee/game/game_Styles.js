@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components';
 const sizes = {
 	tablet: 1110,
-	phone: 500
+	phone: 500,
+	smallPhone: 330
 };
 
 const media = Object.keys(sizes).reduce((acc, label) => {
@@ -25,6 +26,7 @@ export const StyledGame = styled.div`
 	align-items: center;
 
 	${media.phone`width: 360px;`}
+	${media.smallPhone`width: 300px;`}
 `;
 export const StyledScoreBoardController = styled.div`
 	position: relative;
@@ -38,6 +40,7 @@ export const StyledScoreBoardController = styled.div`
 	align-items: center;
 
 	${media.phone`width: 360px;`}
+	${media.smallPhone`width: 300px;`}
 `;
 export const StyledWinner = styled.div`
 	color: green;

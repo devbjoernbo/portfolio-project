@@ -67,20 +67,20 @@ class Yahtzee extends Rule {
 	};
 }
 
-const ones = new TotalOneNumber({ val: 1, description: '1 point pr. 1' });
-const twos = new TotalOneNumber({ val: 2, description: '2 point pr. 2' });
-const threes = new TotalOneNumber({ val: 3, description: '3 point pr. 3' });
-const fours = new TotalOneNumber({ val: 4, description: '4 point pr. 4' });
-const fives = new TotalOneNumber({ val: 5, description: '5 point pr. 5' });
-const sixes = new TotalOneNumber({ val: 6, description: '6 point pr. 6' });
+const ones = new TotalOneNumber({ val: 1, description: '1 point pr 1' });
+const twos = new TotalOneNumber({ val: 2, description: '2 point pr 2' });
+const threes = new TotalOneNumber({ val: 3, description: '3 point pr 3' });
+const fours = new TotalOneNumber({ val: 4, description: '4 point pr 4' });
+const fives = new TotalOneNumber({ val: 5, description: '5 point pr 5' });
+const sixes = new TotalOneNumber({ val: 6, description: '6 point pr 6' });
 
 const threeOfKind = new SumDistro({
 	count: 3,
-	description: 'Sum 3 terninger'
+	description: 'Sum af 3 terninger'
 });
 const fourOfKind = new SumDistro({
 	count: 4,
-	description: 'Sum 4 terninger'
+	description: 'Sum af 4 terninger'
 });
 
 const fullHouse = new FullHouse({

@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components';
 const sizes = {
 	tablet: 1110,
-	phone: 500
+	phone: 500,
+	smallPhone: 330
 };
 
 const media = Object.keys(sizes).reduce((acc, label) => {
@@ -20,6 +21,7 @@ export const StyledTicTacToe = styled.div`
 	text-align: center;
 
 	${media.phone`width: 360px;`}
+	${media.smallPhone`width: 300px;`}
 `;
 
 export const StyledGameContainer = styled.div`
@@ -37,6 +39,7 @@ export const StyledGameContainer = styled.div`
 	text-align: center;
 
 	${media.phone`width: 360px; left: calc(50% - 180px);`}
+	${media.phone`width: 300px; left: calc(50% - 150px);`}
 `;
 
 export const StyledMoves = styled.li`

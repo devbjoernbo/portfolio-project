@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components';
 const sizes = {
 	tablet: 1110,
-	phone: 500
+	phone: 500,
+	smallPhone: 330
 };
 
 const media = Object.keys(sizes).reduce((acc, label) => {
@@ -32,6 +33,7 @@ export const StyledColorContainer = styled.div`
 	justify-content: center;
 
 	${media.phone`width: 360px; left: calc(50% - 180px);`}
+	${media.smallPhone`width: 300px; left: calc(50% - 150px);`}
 `;
 
 export const StyledGameControlContainer = styled.div`
@@ -72,6 +74,7 @@ export const StyledButton = styled.button`
 	}
 
 	${media.phone`width: 80px; font-size: 13px;`}
+	${media.smallPhone`width: 50px; font-size: 11px;`}
 `;
 
 export const StyledSquareContainer = styled.div`

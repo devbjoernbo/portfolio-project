@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components';
 const sizes = {
 	tablet: 1110,
-	phone: 500
+	phone: 500,
+	smallPhone: 330
 };
 
 const media = Object.keys(sizes).reduce((acc, label) => {
@@ -27,6 +28,7 @@ export const StyledListImageCollection = styled.div`
 	justify-items: center;
 
 	${media.phone`width: 360px; `}
+	${media.smallPhone`width: 300px; `}
 `;
 export const StyledList = styled.div`
 	width: 400px;
@@ -35,11 +37,14 @@ export const StyledList = styled.div`
 	padding: 15px;
 
 	${media.phone`width: 280px; `}
+	${media.smallPhone`width: 220px; `}
 `;
 export const StyledListItem = styled.div`
 	position: relative;
 	top: 50%;
 	text-align: center;
+
+	${media.smallPhone`font-size: 14px; `}
 `;
 export const StyledRowSize = styled.div`
 	margin: 20px;

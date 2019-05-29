@@ -29,10 +29,7 @@ const Welcome = () => {
 					arbejdsopgaver er indenfor front- eller back-end. Jeg har
 					positive erfaringer med begge områder, og en interesse i, at
 					blive bedre til at udvikle løsninger og løse
-					problemstillinger, der relaterer sig til begge af områderne
-					- og jeg er selvfølgelig villig til, at lægge en ekstra
-					indsats i, at udvikle mine kompetencer på de områder, der
-					ønskes, fra min kommende arbejdsgiver.
+					problemstillinger, der relaterer sig til begge af områderne.
 				</StyledDecription>
 				<StyledDecription>
 					Denne hjemmeside er programmeret med Node, Express. og

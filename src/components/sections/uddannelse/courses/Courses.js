@@ -148,7 +148,7 @@ const coursesItems = [
 		hours: 36.5,
 		completed: 18,
 		mainSubjects: ['Hooks', 'React Router', 'Animations'],
-		url: 'https://www.udemy.com/modern-react-bootcamp/learn/v4/overview'
+		url: 'https://www.udemy.com/modern-react-bootcamp'
 	},
 	{
 		title: 'The Web Developer Bootcamp',
@@ -158,13 +158,12 @@ const coursesItems = [
 		mainSubjects: [
 			'HTML5',
 			'CSS3',
-			'Javascript',
+			'JavaScript',
 			'NodeJS',
 			'ExpressJS',
 			'MongoDB / MongooseJS'
 		],
-		url:
-			'https://www.udemy.com/the-web-developer-bootcamp/learn/v4/overview'
+		url: 'https://www.udemy.com/the-web-developer-bootcamp'
 	},
 	{
 		title: 'MySQL, SQL and Stored Procedures from Beginner to Advanced',
@@ -172,8 +171,7 @@ const coursesItems = [
 		hours: 18.5,
 		completed: 62,
 		mainSubjects: ['Create, query and update databases'],
-		url:
-			'https://www.udemy.com/mysql-and-sql-from-beginner-to-advanced/learn/v4/overview'
+		url: 'https://www.udemy.com/mysql-and-sql-from-beginner-to-advanced'
 	},
 	{
 		title: 'Modern React with Redux',
@@ -194,8 +192,7 @@ const coursesItems = [
 			'Stipe-payments',
 			'Heroku Deployment'
 		],
-		url:
-			'https://www.udemy.com/node-with-react-fullstack-web-development/learn/v4/overview'
+		url: 'https://www.udemy.com/node-with-react-fullstack-web-development'
 	},
 	{
 		title: "ES6 JavaScript: The Complete Developer's Guide",
@@ -203,7 +200,7 @@ const coursesItems = [
 		hours: 6.5,
 		completed: 95,
 		mainSubjects: ['ES6 features'],
-		url: 'https://www.udemy.com/javascript-es6-tutorial/learn/v4/overview'
+		url: 'https://www.udemy.com/javascript-es6-tutorial'
 	},
 	{
 		title: 'The Complete Developers Guide to MongoDB',
@@ -211,8 +208,7 @@ const coursesItems = [
 		hours: 13.5,
 		completed: 99,
 		mainSubjects: ['Mongoose', 'Mocha', 'Robomongo'],
-		url:
-			'https://www.udemy.com/the-complete-developers-guide-to-mongodb/learn/v4/overview'
+		url: 'https://www.udemy.com/the-complete-developers-guide-to-mongodb'
 	},
 	{
 		title: 'Advanced React and Redux: 2018 Edition',
@@ -220,7 +216,7 @@ const coursesItems = [
 		hours: 21,
 		completed: 62,
 		mainSubjects: ['Testing: Jest & Enzyme', 'Authentication'],
-		url: 'https://www.udemy.com/react-redux-tutorial/learn/v4/overview'
+		url: 'https://www.udemy.com/react-redux-tutorial'
 	},
 	{
 		title: 'Learn HTML5 Programming From Scratch',
@@ -228,8 +224,7 @@ const coursesItems = [
 		hours: 10.5,
 		completed: 42,
 		mainSubjects: ['Forskellige HTML features'],
-		url:
-			'https://www.udemy.com/learn-html5-programming-from-scratch/learn/v4/overview'
+		url: 'https://www.udemy.com/learn-html5-programming-from-scratch'
 	},
 	{
 		title: 'The Complete JavaScript Course 2019: Build Real Projects!',
@@ -237,8 +232,7 @@ const coursesItems = [
 		hours: 28,
 		completed: 100,
 		mainSubjects: ['Forskellige JavaScript features'],
-		url:
-			'https://www.udemy.com/the-complete-javascript-course/learn/v4/overview'
+		url: 'https://www.udemy.com/the-complete-javascript-course'
 	},
 	{
 		title: 'Advanced CSS and Sass: Flexbox, Grid, Animations and More!',
@@ -246,7 +240,7 @@ const coursesItems = [
 		hours: 28,
 		completed: 40,
 		mainSubjects: ['Grid', 'Flexbox'],
-		url: 'https://www.udemy.com/advanced-css-and-sass/learn/v4/overview'
+		url: 'https://www.udemy.com/advanced-css-and-sass'
 	},
 	{
 		title: 'Animating React',
@@ -274,7 +268,7 @@ const coursesItems = [
 		hours: 12,
 		completed: 0,
 		mainSubjects: ['MERN-stack', 'Server-config'],
-		url: 'https://www.udemy.com/mern-stack-front-to-back/learn/v4/overview'
+		url: 'https://www.udemy.com/mern-stack-front-to-back'
 	},
 	{
 		title: 'Machine Learning with Javascript',
@@ -282,8 +276,7 @@ const coursesItems = [
 		hours: 17.5,
 		completed: 0,
 		mainSubjects: ['Machine learning'],
-		url:
-			'https://www.udemy.com/machine-learning-with-javascript/learn/v4/overview'
+		url: 'https://www.udemy.com/machine-learning-with-javascript'
 	},
 	{
 		title: 'React Native - The Practical Guide',
@@ -291,8 +284,7 @@ const coursesItems = [
 		hours: 16.5,
 		completed: 0,
 		mainSubjects: ['React Native'],
-		url:
-			'https://www.udemy.com/react-native-the-practical-guide/learn/v4/overview'
+		url: 'https://www.udemy.com/react-native-the-practical-guide'
 	},
 	{
 		title: 'Node JS: Advanced Concepts',
@@ -300,8 +292,7 @@ const coursesItems = [
 		hours: 16,
 		completed: 0,
 		mainSubjects: ['NodeJS'],
-		url:
-			'https://www.udemy.com/advanced-node-for-developers/learn/v4/overview'
+		url: 'https://www.udemy.com/advanced-node-for-developers'
 	},
 	{
 		title: 'React Native: Advanced Concepts',
@@ -309,7 +300,7 @@ const coursesItems = [
 		hours: 16.5,
 		completed: 0,
 		mainSubjects: ['React Native'],
-		url: 'https://www.udemy.com/react-native-advanced/learn/v4/overview'
+		url: 'https://www.udemy.com/react-native-advanced'
 	},
 	{
 		title: 'GraphQL with React: The Complete Developers Guide',
@@ -317,6 +308,6 @@ const coursesItems = [
 		hours: 13.5,
 		completed: 0,
 		mainSubjects: ['GraphQL'],
-		url: 'https://www.udemy.com/graphql-with-react-course/learn/v4/overview'
+		url: 'https://www.udemy.com/graphql-with-react-course'
 	}
 ];

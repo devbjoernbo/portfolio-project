@@ -1,4 +1,20 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
+
+const sizes = {
+	tablet: 1110,
+	phone: 500,
+	smallPhone: 330
+};
+
+const media = Object.keys(sizes).reduce((acc, label) => {
+	acc[label] = (...args) => css`
+		@media (max-width: ${sizes[label] / 16}em) {
+			${css(...args)}
+		}
+	`;
+
+	return acc;
+}, {});
 
 const neonOrange = keyframes`
 
@@ -43,6 +59,8 @@ export const StyledLightsOut = styled.div`
 
 	font-family: neon;
 	src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+
+	${media.smallPhone`height: 550px; `}
 `;
 export const StyledTableRow = styled.tr``;
 
@@ -54,6 +72,8 @@ export const StyledTableItem = styled.td`
 		border-radius: 1px;
 		background-color: #263238;
 		transition: background-color 0.7s ease;
+
+		${media.smallPhone`height: 70px; `}
 	}
 
 	&.Cell-lit {
@@ -74,10 +94,12 @@ export const StyledSpanOrange = styled.span`
 	color: #fb4264;
 	font-size: 60px;
 	text-shadow: 0 0 3vw #f40a35;
-	font-size: 200px;
+
 	animation: ${neonOrange} 1s ease infinite;
 	-moz-animation: ${neonOrange} 1s ease infinite;
 	-webkit-animation: ${neonOrange} 1s ease infinite;
+
+	${media.smallPhone`font-size: 30px; `}
 `;
 export const StyledSpanBlue = styled.span`
 	font-family: neon;
@@ -88,6 +110,8 @@ export const StyledSpanBlue = styled.span`
 	-moz-animation: ${neonBlue} 2s linear infinite;
 	-webkit-animation: ${neonBlue} 2s linear infinite;
 	-o-animation: ${neonBlue} 2s linear infinite;
+
+	${media.smallPhone`font-size: 30px; `}
 `;
 export const StyledBoardTitle = styled.div`
 	display: flex;
@@ -102,6 +126,8 @@ export const StyledDivOrange = styled.div`
 	animation: ${neonOrange} 1s ease infinite;
 	-moz-animation: ${neonOrange} 1s ease infinite;
 	-webkit-animation: ${neonOrange} 1s ease infinite;
+
+	${media.smallPhone`font-size: 50px; `}
 `;
 export const StyledDivBlue = styled.div`
 	font-family: neon;
@@ -112,4 +138,6 @@ export const StyledDivBlue = styled.div`
 	-moz-animation: ${neonBlue} 2s linear infinite;
 	-webkit-animation: ${neonBlue} 2s linear infinite;
 	-o-animation: ${neonBlue} 2s linear infinite;
+
+	${media.smallPhone`font-size: 50px; `}
 `;

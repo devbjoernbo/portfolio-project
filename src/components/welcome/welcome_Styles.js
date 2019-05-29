@@ -6,7 +6,8 @@ import Image from 'react-bootstrap/Image';
 //MEDIA-QUERIES
 const sizes = {
 	tablet: 1024,
-	phone: 500
+	phone: 500,
+	smallPhone: 330
 };
 
 const media = Object.keys(sizes).reduce((acc, label) => {
@@ -75,4 +76,5 @@ export const StyledImage = styled(Image)`
 	box-shadow: 0 10px 19px rgba(0, 0, 0, 0.3), 0 7px 6px rgba(0, 0, 0, 0.1);
 
 	${media.tablet`height: 280px; margin-top: 60px;`}
+	${media.smallPhone`height: 200px; margin-top: 20px;`}
 `;

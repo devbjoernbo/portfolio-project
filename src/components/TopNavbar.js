@@ -1,14 +1,14 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { StyledScrollspy } from './topNavbar_Styles';
+import { StyledScrollspy, StyledNavbarBrand } from './topNavbar_Styles';
 
 const TopNavBar = ({ sections }) => {
 	const cleanedIDSections = sections.map(section => section.id);
 
 	return (
 		<Navbar expand="md" bg="light">
-			<Navbar.Brand>Nicolai Bjørnbo Christensen</Navbar.Brand>
+			<StyledNavbarBrand>Nicolai Bjørnbo Christensen</StyledNavbarBrand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />
 			<Navbar.Collapse
 				id="basic-navbar-nav"
