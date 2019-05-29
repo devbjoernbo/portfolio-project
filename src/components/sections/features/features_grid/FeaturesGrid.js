@@ -64,7 +64,7 @@ const FeaturesGrid = ({ features, toggle, on }) => {
 		on
 			? [expandFeatureDesc, springRef, trailRef]
 			: [trailRef, springRef, expandFeatureDesc],
-		on ? [0, 0, 1] : [0, 1, 1]
+		on ? [0, 0.2, 1] : [0, 1, 1.2]
 	);
 
 	return (

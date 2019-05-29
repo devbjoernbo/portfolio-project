@@ -29,10 +29,17 @@ const RowGridCollection = () => {
 
 	const handleOnValueNumberChange = (countType, event) => {
 		const count = event.target.value;
+		const numberedCount = Number(count);
 
-		setListConfig(config => {
-			return { ...config, [countType]: Number(count) };
-		});
+		if (isNaN(numberedCount)) {
+			setListConfig(config => {
+				return { ...config, [countType]: 0 };
+			});
+		} else {
+			setListConfig(config => {
+				return { ...config, [countType]: numberedCount };
+			});
+		}
 	};
 
 	const handleOnPickedList = () => {
@@ -123,8 +130,8 @@ const RowSizeSelection = ({
 			</StyledButton>
 			<StyledLabel>
 				{isRow
-					? 'Vælg antallet af rækker:'
-					: 'Vælg antallet af rækker og kolonner:'}
+					? 'Vælg antal rækker:'
+					: 'Vælg antal rækker og kolonner:'}
 				<StyledInput
 					value={rowCount}
 					onChange={event =>

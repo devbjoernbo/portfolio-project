@@ -17,7 +17,7 @@ const media = Object.keys(sizes).reduce((acc, label) => {
 export const StyledListImageCollection = styled.div`
 	position: relative;
 	width: 450px;
-	height: 550px;
+	height: 600px;
 	display: flex;
 	flex-direction: column;
 	background-color: white;
@@ -50,15 +50,19 @@ export const StyledRowSize = styled.div`
 
 	justify-items: center;
 `;
-export const StyledLabel = styled.label`
-	font-size: 15px;
-	font-weight: 500;
-`;
+
 export const StyledInput = styled.input`
 	text-align: center;
 	font-size: 15px;
 	width: 60px;
 	margin: 0 10px 0 10px;
+	${media.phone` position: relative; width: 100px; margin: 10px 0 0 0; display: block; left: calc(50% - 50px);`}
+`;
+
+export const StyledLabel = styled.label`
+	font-size: 15px;
+	font-weight: 500;
+	text-align: center;
 `;
 export const StyledImageCollection = styled.div`
 	display: grid;

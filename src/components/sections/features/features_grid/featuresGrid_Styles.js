@@ -55,13 +55,11 @@ export const StyledFeaturesWrapper = styled(animated.div)`
 
 	justify-content: strech;
 	align-items: strech;
-
 	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
 `;
 export const StyledFeatureItem = styled.div`
 	height: 100%;
 	width: 100%;
-
 	background: ${props => props.backgroundColor};
 	text-align: center;
 `;
@@ -128,14 +126,14 @@ export const StyledCurrentFeatureDescription = styled(animated(Card))`
 
 	box-shadow: 0 10px 19px rgba(0, 0, 0, 0.3), 0 7px 6px rgba(0, 0, 0, 0.1);
 	left: 5%;
-	top: calc(50% - 45%);
-
+	top: 80px;
 	z-index: 20;
 
 	${media.tablet`top: 0; width: 85%; left: 7.5%; font-size: 14px;`}
-	${media.phone`font-size: 14px;`}
+	${media.phone`top: 50px; font-size: 14px;`}
 `;
 export const StyledCurrentFeatureContainer = styled(animated(Card.Body))`
+	position: relative;
 	width: 100%;
 
 	display: flex;

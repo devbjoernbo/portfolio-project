@@ -39,7 +39,7 @@ const Welcome = () => {
 					React. Jeg har opsat hjemmesiden på Heroku med
 					DNS-administration på One.com. CSS'en har jeg implementeret
 					med styled-components, og til animationen har jeg brugt
-					react-spring og react-transition-group. Jeg vil fredadrettet
+					react-spring og react-transition-group. Jeg vil fremadrettet
 					opdatere hjemmesiden jævnligt med nye features og
 					portefølje-projekter, indtil det lykkes med jobsøgningen.
 				</StyledDecription>

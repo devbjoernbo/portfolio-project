@@ -34,7 +34,7 @@ export const StyledTimelineContainer = styled.div`
 		height: 100%;
 	}
 
-	${media.tablet` width: 70%; margin-top: 50px; `}
+	${media.tablet` width: 80%; margin-top: 50px; `}
 `;
 
 export const StyledItemContent = styled.div`
@@ -112,7 +112,6 @@ export const StyledItemContainer = styled(animated.div)`
 	z-index: 15;
 	box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
 	transition: box-shadow 0.5s;
-	will-change: transform;
 
 	:hover  {
 		box-shadow: 0px 30px 100px -20px rgba(0, 0, 0, 0.8);

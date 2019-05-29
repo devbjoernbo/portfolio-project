@@ -70,11 +70,11 @@ const CourseOverview = ({ courses }) => {
 	return (
 		<StyledCourseOverview border="light">
 			<StyledOverviewTitle>
-				Oversigt over kurser - inkl. planlagte kurser
+				Oversigt over kurser - inkl. planlagte
 			</StyledOverviewTitle>
 			<StyledStatsContainer>
 				<StyledStatsText>
-					<strong>Antal kursuser: </strong>
+					<strong>Antal kurser: </strong>
 					{courses.length}
 				</StyledStatsText>
 				<StyledStatsText>
@@ -86,7 +86,7 @@ const CourseOverview = ({ courses }) => {
 					{totalCompletedHours}
 				</StyledStatsText>
 				<StyledStatsText>
-					<strong>Hovedemner:</strong> HTML, CSS, JavaScript, ReactJS,
+					<strong>Hovedemner: </strong>HTML, CSS, JavaScript, ReactJS,
 					MongoDB, ExpressJS, NodeJS.
 				</StyledStatsText>
 			</StyledStatsContainer>

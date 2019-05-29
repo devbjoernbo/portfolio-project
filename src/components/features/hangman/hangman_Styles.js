@@ -19,7 +19,7 @@ export const StyledHangman = styled.div`
 	width: 400px;
 	color: black;
 	text-align: center;
-	zoom: 1.2;
+	zoom: 1.1;
 
 	${media.phone`width: 360px; zoom: 1.0; `}
 `;
@@ -66,6 +66,8 @@ export const StyledHangmanWordParagraph = styled.p`
 	letter-spacing: 1em;
 	margin: 0 -1em 0.2em 0;
 	font-size: 2rem;
+
+	${media.phone`font-size: 1.7rem; margin: 0 -0.5em 0.1em 0; `}
 `;
 export const StyledHangmanButtons = styled.p`
 	text-align: center;
